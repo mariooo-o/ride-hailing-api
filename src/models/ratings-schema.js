@@ -9,7 +9,7 @@ module.exports = (db) =>
       },
       user: {
         type: db.Schema.Types.ObjectId,
-        ref: 'ratings',
+        ref: 'Users',
         required: true,
       },
       driver: {

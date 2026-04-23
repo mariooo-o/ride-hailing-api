@@ -82,9 +82,7 @@ async function updateUser(request, response, next) {
 
     validateUserPayload(fullName, email, phoneNumber);
 
-    const emailOwner = await usersService.getUserByEmail(email);
-
-    if (emailOwner && emailOwner.id !== request.params.id) {
+    if (email !== existingUser.email && (await usersService.emailExists(email))) {
       throw errorResponder(errorTypes.EMAIL_ALREADY_TAKEN, 'Email already exists');
     }
 

@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const ratingsService = require('./ratings-service');
 const ordersService = require('../orders/orders-service');
-// const ratingsService = require('../ratings/ratings-service');
+const usersService = require('../users/users-service');
 const driversService = require('../drivers/drivers-service');
 const { errorResponder, errorTypes } = require('../../../core/errors');
 
@@ -65,7 +65,7 @@ async function validateRatingRelations(orderId, userId, driverId) {
 
   const [order, user, driver] = await Promise.all([
     ordersService.getOrder(orderId),
-    ratingsService.getUser(userId),
+    usersService.getUser(userId),
     driversService.getDriver(driverId),
   ]);
 
