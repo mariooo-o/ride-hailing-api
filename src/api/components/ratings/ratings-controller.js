@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const ratingsService = require('./ratings-service');
 const ordersService = require('../orders/orders-service');
-const ratingsService = require('../ratings/ratings-service');
+// const ratingsService = require('../ratings/ratings-service');
 const driversService = require('../drivers/drivers-service');
 const { errorResponder, errorTypes } = require('../../../core/errors');
 

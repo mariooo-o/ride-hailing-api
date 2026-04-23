@@ -1,7 +1,8 @@
 const { Orders } = require('../../../models');
 
 async function getOrders() {
-  return Orders.find({}).populate('user').populate('driver');
+  // return Orders.find({}).populate('user').populate('driver');
+  return Orders.find();
 }
 
 async function getOrder(id) {
