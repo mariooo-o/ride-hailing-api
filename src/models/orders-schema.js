@@ -8,7 +8,7 @@ module.exports = (db) =>
       phoneNumber: String,
       user: {
         type: db.Schema.Types.ObjectId,
-        ref: 'orders',
+        ref: 'Users',
         required: true,
       },
       driver: {

@@ -10,7 +10,7 @@ module.exports = () => {
 
   users(app);
   drivers(app);
-  // orders(app);
+  orders(app);
   ratings(app);
 
   return app;
