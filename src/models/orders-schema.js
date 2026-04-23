@@ -18,8 +18,8 @@ module.exports = (db) =>
       },
       status: {
         type: String,
-        enum: ['Pending', 'Accepted', 'Ongoing', 'Completed', 'cancelled'],
-        default: 'Pending',
+        enum: ['pending', 'accepted', 'ongoing', 'completed', 'cancelled'],
+        default: 'pending',
       },
       orderedAt: {
         type: Date,
