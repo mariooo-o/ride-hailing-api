@@ -10,8 +10,8 @@ module.exports = (db) =>
       vehicleNumber: String,
       status: {
         type: String,
-        enum: ['Availabel', 'Busy', 'Offline'],
-        default: 'Availabel',
+        enum: ['availabel', 'busy', 'offline'],
+        default: 'availabel',
       },
     })
   );
