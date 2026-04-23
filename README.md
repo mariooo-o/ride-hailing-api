@@ -57,7 +57,7 @@
 
 {
   "fullName": "Alex Samosir",
-  "email": "alex@email.com",
+  "email": "alex@gmail.com",
   "phoneNumber": "08123456789"
 }
 
@@ -65,7 +65,7 @@
 
 {
   "fullName": "Budi Driver",
-  "email": "budi@email.com",
+  "email": "budi@gmail.com",
   "phoneNumber": "08129876543",
   "licenseNumber": "SIMC-001",
   "vehicleType": "Motor",
